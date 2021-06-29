@@ -6,7 +6,7 @@ hamburguer.addEventListener("click", function(){
 });
 
 //AddEventListener é utilizado para adicionar eventos em elementos HTML. Em tempo de execução, você pode utilizar esta função para dizer o que vai acontecer quando o usuário clicar em um botão
-
+/*
 
 const qtde = document.querySelector("#qtde").addEventListener("change", atualizarPreco) //Sempre que acontecer um click em #qtde, vai atualizar a caixa de texto
 
@@ -41,3 +41,31 @@ function atualizarPreco() {
 //document.querySelector("#qtde"): Retorna o elemento HTML, ou no nosso caso nossa caixa de texto.
 
 //value:Diferente do comando de cima, esse comando, pega o valor digitado na caixa de texto
+*/
+
+
+function carregar() {
+    //var banner  = window.document.getElementById("banner");
+
+    var troca = window.document.getElementById("troca");
+
+
+    var data = new Date();
+    var hora = data.getHours();
+
+    //banner.innerHTML = `Agora são ${hora} horas.`;
+
+    if (hora >= 0 && hora < 12) {
+        //Bom dia
+        troca.src = "xicara.jpg";
+        
+    } else if(hora >= 12 && hora < 18){
+         //Boa Tarde
+         troca.src = "pcdia3.jpg";
+         
+    } else {
+        //Boa noite
+        troca.src = "pcnoite4.jpg";
+     }
+
+}
