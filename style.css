@@ -337,6 +337,7 @@ cover: O conteúdo substituído é dimensionado para manter sua proporção e pr
   .conhecimento-text {
       font-family: var(--font-secundary);
       margin-top: 1rem;
+      font-size: 18px;
   }
 
   .conhecimento-img-wrapper {
